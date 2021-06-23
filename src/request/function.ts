@@ -24,6 +24,7 @@ export const patchRequestData = (config: AxiosRequestConfig, options: RequestOpt
 
     if (method?.toUpperCase() === 'GET') {
       requestParams.params = {
+        ...data,
         ...params,
         ...baseRequestParams,
       }
