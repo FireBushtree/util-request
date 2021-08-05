@@ -4,10 +4,11 @@ export default defineConfig({
   title: 'envcloud-utils-request',
   favicon:
     './images/logo.png',
-  logo: '/util-download/images/logo.png',
+  hash: true,
+  logo: '/util-request/images/logo.png',
   outputPath: 'docs-dist',
-  base: '/util-download',
-  publicPath: '/util-download/',
+  base: '/util-request',
+  publicPath: '/util-request/',
   proxy: {
     '/cloud': {
       target: 'http://ums.sxb805.cn:20513',
