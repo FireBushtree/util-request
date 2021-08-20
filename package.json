@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "envcloud-utils-request",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "license": "MIT",
   "author": {
     "name": "FireBushtree"

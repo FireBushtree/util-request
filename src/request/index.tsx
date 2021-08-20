@@ -4,6 +4,13 @@ import { patchRequestData } from './function';
 
 const SUCCESS_RESPONSE = 0;
 
+const defaultOptions = {
+  hasUserId: true,
+  hasTenantId: true,
+  requestByFormData: false,
+  useOriginData: false,
+} as RequestOptions
+
 export function request<T>(
   method: Method,
   url: string,
@@ -15,6 +22,11 @@ export function request<T>(
     url,
     data,
   };
+
+  options = {
+    ...defaultOptions,
+    ...options,
+  }
 
   const requestParams = patchRequestData(config, options || {});
 
